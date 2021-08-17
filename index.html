@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GET & POST</title>
+
+    <style>
+        label {
+            display: block;
+            font-size: 20px;
+            margin: 10px;
+        }
+
+        input {
+            width: 280px;
+            height: 40px;
+            font-size: 18px;
+            margin-left: 10px;
+            padding-left: 10px;
+        }
+
+        input.modal__input {
+            margin-bottom: 20px;
+        }
+
+        div.modal__title {
+            font-family: 'Open Sans', sans-serif;
+            font-size: 18px;
+            margin: 10px;
+        }
+
+        button.btn {
+            height: 40px;
+            font-size: 18px;
+            margin-left: 10px;
+            padding: 10px;
+            color: white;
+            background-color: rgb(57, 113, 233);
+            border-radius: 5px;
+            border: 0px;
+            cursor: pointer;
+        }
+
+        h4.post {
+            margin-top: 90px;
+        }
+
+        h4 {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h4>Method GET</h4>
+    <label for="rub">RUB</label>
+    <input id="rub" type="text">
+    <label for="usd">USD</label>
+    <input id="usd" type="text">
+
+
+    <h4 class="post">Method POST</h4>
+    <div class="modal">
+        <form action="#">
+            <div class="modal__title">We will contact you soon!</div>
+            <input required placeholder="Your name" name="name" type="text" class="modal__input">
+            <input required placeholder="Your phone number" name="phone" type="phone" class="modal__input">
+            <button class="btn">Call me back</button>
+        </form>
+    </div>
+
+
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
